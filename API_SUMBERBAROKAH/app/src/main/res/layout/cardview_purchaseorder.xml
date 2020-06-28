@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_purchaseorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/padding5"
+        android:layout_margin="@dimen/padding5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_idPO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="PO001"
+                android:layout_margin="@dimen/padding5"
+                android:textColor="@color/mediumBlue"
+                android:textSize="@dimen/sizeTxt16"/>
+
+            <View style="@style/Divider"/>
+
+            <TextView
+                android:id="@+id/tv_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Customer"
+                android:layout_margin="@dimen/padding5"
+                android:textSize="@dimen/sizeTxt16"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/padding5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/padding5"
+                        android:textSize="@dimen/sizeTxt16"
+                        android:textColor="@color/black"
+                        android:text="Gudang "/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/padding5"
+                        android:textSize="@dimen/sizeTxt16"
+                        android:textColor="@color/black"
+                        android:text="Tanggal"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_gudangKirim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sizeTxt16"
+                        android:textColor="@color/black"
+                        android:layout_margin="@dimen/padding5"
+                        android:text="Pluit"/>
+
+                    <TextView
+                        android:id="@+id/tv_tanggalPO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sizeTxt16"
+                        android:textColor="@color/black"
+                        android:layout_margin="@dimen/padding5"
+                        android:text="24 Juni 2019"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/sizeTxt16"
+                    android:textColor="@color/black"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="Status"/>
+            </LinearLayout>
+
+            <View style="@style/Divider"/>
+
+            <TextView
+                android:id="@+id/tv_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sizeTxt16"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/padding5"
+                android:text="SEGERA KIRIM"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

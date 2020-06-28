@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+    <ImageView
+        android:layout_width="257dp"
+        android:layout_height="252dp"
+        android:src="@drawable/sb" />
+
+    <EditText
+        android:id="@+id/et_ipServer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/shapeemail"
+        android:digits="0123456789."
+        android:drawableLeft="@drawable/ic_placeholder"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/mr"
+        android:hint="IP SERVER"
+        android:inputType="numberDecimal"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/et_portServer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawablePadding="10dp"
+        android:padding="15dp"
+        android:drawableLeft="@drawable/ic_computer_black_24dp"
+        android:background="@drawable/shapeemail"
+        android:fontFamily="@font/mr"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:digits="0123456789."
+        android:inputType="numberDecimal"
+        android:hint="PORT SERVER"/>
+
+    <Button
+        android:id="@+id/btn_updateSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shapelogin"
+        android:padding="15dp"
+        android:shadowColor="@android:color/transparent"
+        android:fontFamily="@font/mr"
+        android:text="Update" />
+</LinearLayout>

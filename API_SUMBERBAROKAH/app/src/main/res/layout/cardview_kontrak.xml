@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_listkontrak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/padding5"
+        android:layout_margin="@dimen/padding5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_idKontrak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/mr"
+                android:text="KO01"
+                android:layout_margin="@dimen/padding5"
+                android:textColor="@color/mediumBlue"
+                android:textSize="@dimen/sizeTxt16"/>
+
+            <View style="@style/Divider"/>
+
+            <TextView
+                android:id="@+id/tv_namaCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:fontFamily="@font/mm"
+                android:text="Nama Customer"
+                android:textColor="@color/mediumBlue"
+                android:layout_margin="@dimen/padding5"
+                android:textSize="@dimen/sizeTxt16"/>
+
+            <TextView
+                android:id="@+id/tv_alamatCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:fontFamily="@font/mm"
+                android:text="Alamat Customer"
+                android:textColor="@color/mediumBlue"
+                android:layout_margin="@dimen/padding5"
+                android:textSize="@dimen/sizeTxt16"/>
+
+            <!--Cardview data Tender-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/padding5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/padding5"
+                            android:textSize="@dimen/sizeTxt15"
+                            android:fontFamily="@font/mm"
+                            android:textColor="@color/black"
+                            android:text="Tanggal Tender"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_tanggalTenderKontrak"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sizeTxt15"
+                            android:fontFamily="@font/mm"
+                            android:textColor="@color/black"
+                            android:layout_margin="@dimen/padding5"
+                            android:text="24 Juni 2019"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_statusTender"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/sizeTxt15"
+                        android:fontFamily="@font/mm"
+                        android:textColor="@color/black"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="Status"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--cardview dataTender selesai-->
+
+            <View style="@style/Divider"/>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

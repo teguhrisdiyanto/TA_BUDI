@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DataTransaksi.PurchaseOrder.InputPOActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--cardview spinner customer-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding5"
+                app:cardCornerRadius="@dimen/padding5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Customer"
+                        android:layout_margin="@dimen/padding5"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sizeTxt16"/>
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/spn_customer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/padding5"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sizeTxt16">
+
+                    </android.support.v7.widget.AppCompatSpinner>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--cardview spinner customer selesai-->
+
+            <!--cardview data customer-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding5"
+                app:cardCornerRadius="@dimen/padding5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Data Customer"
+                        android:layout_margin="@dimen/padding5"/>
+
+                    <View style="@style/Divider" />
+
+                    <TextView
+                        android:id="@+id/tv_idCustomer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="CST001"
+                        android:layout_margin="@dimen/padding5"
+                        android:textColor="@color/mediumBlue"
+                        android:textSize="@dimen/sizeTxt16"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/padding5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/padding5"
+                                android:textSize="@dimen/sizeTxt16"
+                                android:textColor="@color/black"
+                                android:text="Nama Customer "/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/padding5"
+                                android:textSize="@dimen/sizeTxt16"
+                                android:textColor="@color/black"
+                                android:text="Alamat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/padding5"
+                                android:textSize="@dimen/sizeTxt16"
+                                android:textColor="@color/black"
+                                android:text="Telepon"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/padding5"
+                                android:textSize="@dimen/sizeTxt16"
+                                android:textColor="@color/black"
+                                android:text="Email"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_custNama"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/sizeTxt16"
+                                android:textColor="@color/black"
+                                android:layout_margin="@dimen/padding5"
+                                android:text="Hafied Rafiudin"/>
+
+                            <TextView
+                                android:id="@+id/tv_custAlamat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/sizeTxt16"
+                                android:textColor="@color/black"
+                                android:layout_margin="@dimen/padding5"
+                                android:text="Utan Jati"/>
+
+                            <TextView
+                                android:id="@+id/tv_custTelepon"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/sizeTxt16"
+                                android:textColor="@color/black"
+                                android:layout_margin="@dimen/padding5"
+                                android:text="081244547787"/>
+
+                            <TextView
+                                android:id="@+id/tv_custEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/sizeTxt16"
+                                android:textColor="@color/black"
+                                android:layout_margin="@dimen/padding5"
+                                android:text="hafied@gmail.com"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!--Cardview data customer selesai-->
+
+            <EditText
+                android:id="@+id/et_gudangKirim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Gudang Kirim"
+                android:layout_margin="@dimen/padding5"
+                android:textSize="@dimen/sizeTxt16"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/et_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Note"
+                android:layout_margin="@dimen/padding5"
+                android:textSize="@dimen/sizeTxt16"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
